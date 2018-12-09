@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 
+:root {
+	--main-font: 'Roboto Slab', serif;
+	--code-font: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+	--yellow: #f0db4e;
+	--black: #323230;
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -10,17 +17,18 @@ body {
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #f0db4e;
-	color: #323230;
-	font-family: 'Roboto Slab', serif;
+	background-color: var(--yellow);
+	color: var(--black);
+	font-family: var(--main-font);
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+	font-family: var(--code-font);
 }
 
 h1 {
 	text-align: center;
+	font-size: 4rem;
 }
 
 .code-block {
@@ -37,4 +45,33 @@ h1 {
 
 .code-block > div {
 	padding-bottom: 1.5rem;
+}
+
+.test-area {
+	padding-top: 1.5rem;
+}
+
+.test-area form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.test-area button {
+	border-color: transparent;
+	border-style: none;
+	height: 23px;
+	margin-left: .4rem;
+	cursor: pointer;
+	background-color: var(--black);
+	color: #fff;
+	font-size: 1rem;
+	font-family: var(--code-font);
+}
+
+.test-area input {
+	font-family: var(--code-font);
+	font-size: 1rem;
+	height: 20px;
+	text-align: center;
 }

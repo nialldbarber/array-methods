@@ -8,8 +8,22 @@ const CodeBlock = styled.span`
 `;
 
 class Push extends React.Component {
+	methodInput = React.createRef();
+
 	state = {
-		pageName: 'Push'
+		pageName: 'Push',
+		method: '',
+		methodTrue: 'instruments.push("keyboard");',
+		methodValue: ''
+	};
+
+	methodTest = (event) => {
+		event.preventDefault();
+		const storeName = this.methodInput.current.value;
+		const correctValue = this.state.methodValue;
+		const result =
+			storeName === this.state.methodTrue ? this.setState({ methodValue: ", 'keyboard'" }) : 'Incorrect';
+		console.log(result);
 	};
 
 	render() {
@@ -35,6 +49,17 @@ class Push extends React.Component {
 						<code>
 							console.log(instruments) <CodeBlock>// ["guitar", "bass", "drums", "keyboard"]</CodeBlock>
 						</code>
+					</div>
+					<h2>You try!</h2>
+					<div className="array">
+						<code>let instruments = ['guitar', 'bass', 'drums'{this.state.methodValue}];</code>
+						<p>In the text area below, add keyboard to the array</p>
+						<div className="test-area">
+							<form onSubmit={this.methodTest}>
+								<input type="text" ref={this.methodInput} required placeholder="Enter here" />
+								<button type="submit">Go!</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
