@@ -26,7 +26,7 @@ class Pop extends React.Component {
 					</div>
 					<div className="execution">
 						<code>
-							instruments.cars(); <CodeBlock>// toyota</CodeBlock>
+							cars.pop(); <CodeBlock>// toyota</CodeBlock>
 						</code>
 					</div>
 					<div className="result">
