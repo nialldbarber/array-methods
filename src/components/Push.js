@@ -53,7 +53,7 @@ class Push extends React.Component {
 					<h2>You try!</h2>
 					<div className="array">
 						<code>let instruments = ['guitar', 'bass', 'drums'{this.state.methodValue}];</code>
-						<p>In the text area below, add keyboard to the array</p>
+						<p>In the text area below, add keyboard to end the array</p>
 						<div className="test-area">
 							<form onSubmit={this.methodTest}>
 								<input type="text" ref={this.methodInput} required placeholder="Enter here" />

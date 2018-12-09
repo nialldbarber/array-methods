@@ -8,8 +8,21 @@ const CodeBlock = styled.span`
 `;
 
 class Shift extends React.Component {
+	methodInput = React.createRef();
+
 	state = {
-		pageName: 'Shift'
+		pageName: 'Shift',
+		method: '',
+		methodTrue: 'dinos.shift();',
+		methodValue: "'t-rex', "
+	};
+
+	methodTest = (event) => {
+		event.preventDefault();
+		const storeName = this.methodInput.current.value;
+		const correctValue = this.state.methodValue;
+		const result = storeName === this.state.methodTrue ? this.setState({ methodValue: '' }) : 'Incorrect';
+		console.log(result);
 	};
 
 	render() {
@@ -34,6 +47,19 @@ class Shift extends React.Component {
 						<code>
 							console.log(dinos) <CodeBlock>// ['velociraptor', 'diplodocus', 'pterodactyl']</CodeBlock>
 						</code>
+					</div>
+					<h2>You try!</h2>
+					<div className="array">
+						<code>let dinos = [{this.state.methodValue}'velociraptor', 'diplodocus', 'pterodactyl'];</code>
+						<p>
+							In the text area below, remove the <i>first</i> element of this array
+						</p>
+						<div className="test-area">
+							<form onSubmit={this.methodTest}>
+								<input type="text" ref={this.methodInput} required placeholder="Enter here" />
+								<button type="submit">Go!</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
