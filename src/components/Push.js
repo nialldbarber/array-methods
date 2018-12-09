@@ -13,7 +13,7 @@ class Push extends React.Component {
 	state = {
 		pageName: 'Push',
 		method: '',
-		methodTrue: 'instruments.push("keyboard");',
+		methodTrue: "instruments.push('keyboard');",
 		methodValue: ''
 	};
 
