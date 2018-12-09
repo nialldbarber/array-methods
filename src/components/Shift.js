@@ -27,7 +27,7 @@ class Shift extends React.Component {
 					</div>
 					<div className="execution">
 						<code>
-							instruments.dinos(); <CodeBlock>// t-rex</CodeBlock>
+							dinos.shift(); <CodeBlock>// t-rex</CodeBlock>
 						</code>
 					</div>
 					<div className="result">

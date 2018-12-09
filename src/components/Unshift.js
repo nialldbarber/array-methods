@@ -27,7 +27,7 @@ class Unshift extends React.Component {
 					</div>
 					<div className="execution">
 						<code>
-							instruments.planets('mercury'); <CodeBlock>// t-rex</CodeBlock>
+							planets.unshift('mercury'); <CodeBlock>// t-rex</CodeBlock>
 						</code>
 					</div>
 					<div className="result">
