@@ -36,12 +36,13 @@ class Push extends React.Component {
 					</div>
 					<div className="execution">
 						<code>
-							instruments.push('keyboard'); <CodeBlock>// 4</CodeBlock>
+							instruments.push('keyboard'); <CodeBlock>&#47;&#47; 4</CodeBlock>
 						</code>
 					</div>
 					<div className="result">
 						<code>
-							console.log(instruments) <CodeBlock>// ["guitar", "bass", "drums", "keyboard"]</CodeBlock>
+							console.log(instruments){' '}
+							<CodeBlock>&#47;&#47; ["guitar", "bass", "drums", "keyboard"]</CodeBlock>
 						</code>
 					</div>
 					<h2>You try!</h2>

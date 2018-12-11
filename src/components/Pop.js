@@ -34,12 +34,12 @@ class Pop extends React.Component {
 					</div>
 					<div className="execution">
 						<code>
-							{this.state.methodTrue} <CodeBlock>// toyota</CodeBlock>
+							{this.state.methodTrue} <CodeBlock>&#47;&#47; toyota</CodeBlock>
 						</code>
 					</div>
 					<div className="result">
 						<code>
-							console.log(cars) <CodeBlock>// ['ferrari', 'mercedes']</CodeBlock>
+							console.log(cars) <CodeBlock>&#47;&#47; ['ferrari', 'mercedes']</CodeBlock>
 						</code>
 					</div>
 					<h2>You try!</h2>

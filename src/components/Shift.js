@@ -34,12 +34,13 @@ class Shift extends React.Component {
 					</div>
 					<div className="execution">
 						<code>
-							dinos.shift(); <CodeBlock>// t-rex</CodeBlock>
+							dinos.shift(); <CodeBlock>&#47;&#47; t-rex</CodeBlock>
 						</code>
 					</div>
 					<div className="result">
 						<code>
-							console.log(dinos) <CodeBlock>// ['velociraptor', 'diplodocus', 'pterodactyl']</CodeBlock>
+							console.log(dinos){' '}
+							<CodeBlock>&#47;&#47; ['velociraptor', 'diplodocus', 'pterodactyl']</CodeBlock>
 						</code>
 					</div>
 					<h2>You try!</h2>

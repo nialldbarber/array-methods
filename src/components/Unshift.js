@@ -35,13 +35,13 @@ class Unshift extends React.Component {
 					</div>
 					<div className="execution">
 						<code>
-							planets.unshift('mercury'); <CodeBlock>// 5</CodeBlock>
+							planets.unshift('mercury'); <CodeBlock>&#47;&#47; 5</CodeBlock>
 						</code>
 					</div>
 					<div className="result">
 						<code>
 							console.log(planets){' '}
-							<CodeBlock>// ['mercury', 'venus', 'earth', 'mars', 'jupiter']</CodeBlock>
+							<CodeBlock>&#47;&#47; ['mercury', 'venus', 'earth', 'mars', 'jupiter']</CodeBlock>
 						</code>
 					</div>
 					<h2>You try!</h2>
