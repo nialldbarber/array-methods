@@ -1,11 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import styled from 'styled-components';
-
-const CodeBlock = styled.span`
-	color: #000;
-	font-weight: 900;
-`;
+import CodeBlock from './styles/CodeBlock';
 
 class Unshift extends React.Component {
 	methodInput = React.createRef();
@@ -20,7 +15,6 @@ class Unshift extends React.Component {
 	methodTest = (event) => {
 		event.preventDefault();
 		const storeName = this.methodInput.current.value;
-		const correctValue = this.state.methodValue;
 		const result =
 			storeName === this.state.methodTrue ? this.setState({ methodValue: "'mercury', " }) : 'Incorrect';
 		console.log(result);
