@@ -5,6 +5,9 @@ import Pop from './Pop';
 import Push from './Push';
 import Shift from './Shift';
 import Unshift from './Unshift';
+import Filter from './Filter';
+import Map from './Map';
+import Reduce from './Reduce';
 import '../App.css';
 
 const Router = () => (
@@ -15,6 +18,9 @@ const Router = () => (
 			<Route exact path="/push" component={Push} />
 			<Route exact path="/shift" component={Shift} />
 			<Route exact path="/unshift" component={Unshift} />
+			<Route exact path="/filter" component={Filter} />
+			<Route exact path="/map" component={Map} />
+			<Route exact path="/reduce" component={Reduce} />
 		</Switch>
 	</BrowserRouter>
 );

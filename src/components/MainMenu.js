@@ -70,6 +70,21 @@ const MainMenu = () => {
 						Unshift
 					</NavLink>
 				</li>
+				<li>
+					<NavLink href="filter" to="/filter" activeClassName="active">
+						Filter
+					</NavLink>
+				</li>
+				<li>
+					<NavLink href="map" to="/map" activeClassName="active">
+						Map
+					</NavLink>
+				</li>
+				<li>
+					<NavLink href="reduce" to="/reduce" activeClassName="active">
+						Reduce
+					</NavLink>
+				</li>
 			</ul>
 		</Menu>
 	);
