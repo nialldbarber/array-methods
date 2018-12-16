@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './Home';
+import App from './App';
 import Pop from './Pop';
 import Push from './Push';
 import Shift from './Shift';
@@ -13,7 +13,7 @@ import '../App.css';
 const Router = () => (
 	<BrowserRouter>
 		<Switch>
-			<Route exact path="/" component={Home} />
+			<Route exact path="/" component={App} />
 			<Route exact path="/pop" component={Pop} />
 			<Route exact path="/push" component={Push} />
 			<Route exact path="/shift" component={Shift} />

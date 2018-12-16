@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header';
 import CodeBlock from './styles/CodeBlock';
+import Header from './Header';
 
 class Map extends React.Component {
 	methodInput = React.createRef();

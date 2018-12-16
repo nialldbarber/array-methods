@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header';
 import CodeBlock from './styles/CodeBlock';
+import Header from './Header';
 
 class Push extends React.Component {
 	methodInput = React.createRef();

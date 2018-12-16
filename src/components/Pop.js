@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header';
 import CodeBlock from './styles/CodeBlock';
+import Header from './Header';
 
 class Pop extends React.Component {
 	methodInput = React.createRef();
@@ -21,7 +21,7 @@ class Pop extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div id="pop">
 				<Header />
 				<h1>{this.state.pageName}</h1>
 				<div className="code-block">
