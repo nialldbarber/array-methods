@@ -17,8 +17,8 @@ class Reduce extends React.Component {
 				<h1>{this.state.pageName}</h1>
 				<div className="code-block">
 					<p>
-						The <code>reduce()</code> is an iteration method executes a reducer function (that you provide)
-						on each member of the array resulting in a single output value
+						<code>reduce()</code> executes a reducer function (that you provide) on each member of the array
+						resulting in a single output value
 					</p>
 					<h2>Example</h2>
 					<div className="array">

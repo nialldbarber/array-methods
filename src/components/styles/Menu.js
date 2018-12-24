@@ -7,7 +7,6 @@ const Menu = styled.nav`
 	padding: 0;
 	padding: 1rem 0;
 	background: #f0db4e;
-	box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.05);
 	ul {
 		padding: 0;
 		display: flex;

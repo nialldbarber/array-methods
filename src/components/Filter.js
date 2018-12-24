@@ -17,7 +17,7 @@ class Filter extends React.Component {
 				<h1>{this.state.pageName}</h1>
 				<div className="code-block">
 					<p>
-						The <code>filter()</code> is an iteration method that creates a new array that returns elements
+						<code>filter()</code> is an iteration method which creates a new array that returns elements
 						that pass the function you give it
 					</p>
 					<h2>Example</h2>

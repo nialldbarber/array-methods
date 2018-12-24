@@ -17,8 +17,8 @@ class Map extends React.Component {
 				<h1>{this.state.pageName}</h1>
 				<div className="code-block">
 					<p>
-						The <code>map()</code> is an iteration method that creates a new array with the results of
-						calling a provided function on every element in the calling array
+						<code>map()</code> is an iteration method that creates a new array with the results of calling a
+						provided function on every element in the calling array
 					</p>
 					<h2>Example</h2>
 					<div className="array">
